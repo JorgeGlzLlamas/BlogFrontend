@@ -164,6 +164,18 @@
 
     <!--=====HEADER END=======-->
 
+     <!--=====Mensaje de Lector de Pantalla=======-->
+    <div id="live-welcome" aria-live="assertive" aria-atomic="true" style="position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;"></div>
+    <script>
+    window.addEventListener('load', () => {
+        const liveRegion = document.getElementById('live-welcome');
+        setTimeout(() => {
+        liveRegion.textContent = 'Bienvenido a Code News, un sitio web sobre blogs de programación.';
+        }, 100); // Pequeño retardo para asegurar que lo lea correctamente
+    });
+    </script>
+
+
     <!--=====Mobile header start=======-->
     <div class="mobile-header mobile-header-main d-block d-lg-none">
         <div class="container-fluid">
@@ -292,8 +304,7 @@
         </div>
     </div>
 </div>
-<!--===== HERO AREA START=======-->
-
+<!--===== HERO AREA END=======-->
 
 
     <!--===== BLOG BOXS AREA START=======-->
