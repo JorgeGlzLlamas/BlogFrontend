@@ -5666,7 +5666,8 @@ h5 {
 }
 
 .blog-formets-sec .search-inputs input {
-  border: 1px solid var(--vtc-border-1);
+  border: 1px solid var(--vtc-text-gray1);
+  color: #fff;
   background: transparent;
   width: 100%;
   padding: 16px;
@@ -5678,7 +5679,7 @@ h5 {
 }
 
 .blog-formets-sec .search-inputs input::placeholder {
-  color: var(--vtc-text-black3);
+  color: var(--vtc-text-gray1);
   font-size: var(--f-fs-font-fs14);
   font-style: normal;
   font-weight: var(--f-fw-regular);
@@ -5704,6 +5705,10 @@ h5 {
   justify-content: end;
 }
 
+.dark-theme-text{
+  color: var(--vtc-text-gray1) !important;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .blog-formets-sec .dropdown-area {
     justify-content: start;
@@ -5719,7 +5724,7 @@ h5 {
 }
 
 .blog-formets-sec .dropdown-area p {
-  color: var(--vtc-text-black3);
+  color: var(--vtc-text-gray1);
   font-size: var(--f-fs-font-fs14);
   font-style: normal;
   font-weight: var(--f-fw-regular);
@@ -5729,7 +5734,8 @@ h5 {
 }
 
 .blog-formets-sec .dropdown-area .nice-select {
-  background-color: var(--vtc-bg-main1);
+  background-color: var(--vtc-bg-common-2);
+  border: var(--vtc-bg-main1);
   color: var(--vtc-bg-white);
   font-size: var(--f-fs-font-fs14);
   font-style: normal;
@@ -5758,7 +5764,7 @@ h5 {
 ::::::::::::::::::::::::::
 */
 .blog1-single-box {
-  border: 1px solid var(--vtc-border-2);
+  border: 1px solid var(--vtc-border-2) !important;
   border-radius: 9px;
   transition: all 0.4s;
 }
@@ -5849,6 +5855,7 @@ h5 {
 .blog1-single-box .heading1 .author-area .date {
   padding-left: 40px;
   position: relative;
+  color: white;
 }
 
 .blog1-single-box .heading1 .author-area .date a {
